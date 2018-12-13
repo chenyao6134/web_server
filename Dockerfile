@@ -6,6 +6,6 @@ CMD ["go-wrapper", "run"]
 ONBUILD COPY . /go.src/web_server
 ONBUILD RUN go-wrapper download
 ONBUILD RUN go-wrapper install
-RUN go get githun.com/astaxie/beego
+RUN go get github.com/astaxie/beego
 RUN go get -d -v
 RUN go install -v
